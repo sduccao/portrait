@@ -24,34 +24,34 @@ export function Contact() {
                 <div className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-accent" />
                   <a
-                    href="mailto:cao.son.duc@example.com"
+                    href="mailto:sonduc2210@gmail.com"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    cao.son.duc@example.com
+                    sonduc2210@gmail.com
                   </a>
                 </div>
 
                 <div className="flex items-center gap-3">
                   <Github className="w-5 h-5 text-accent" />
                   <a
-                    href="https://github.com/caosonduc"
+                    href="https://github.com/sduccao"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    github.com/caosonduc
+                    github.com/sduccao
                   </a>
                 </div>
 
                 <div className="flex items-center gap-3">
                   <Linkedin className="w-5 h-5 text-accent" />
                   <a
-                    href="https://linkedin.com/in/caosonduc"
+                    href="https://linkedin.com/in/cao-son-duc"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    linkedin.com/in/caosonduc
+                    linkedin.com/in/cao-son-duc
                   </a>
                 </div>
               </div>

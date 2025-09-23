@@ -1,18 +1,22 @@
+'use client'
+
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Github, Linkedin, FileText } from "lucide-react"
+import { useLanguage } from "@/contexts/language-context"
 
 export function Hero() {
+  const { t } = useLanguage()
+
   return (
     <section className="py-20 lg:py-32">
       <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <div className="space-y-8">
           <div className="space-y-4">
-            <h1 className="text-4xl lg:text-6xl font-bold text-balance">Cao Son Duc</h1>
-            <p className="text-xl lg:text-2xl text-muted-foreground">Backend Engineer</p>
+            <h1 className="text-4xl lg:text-6xl font-bold text-balance">{t.hero.name}</h1>
+            <p className="text-xl lg:text-2xl text-muted-foreground">{t.hero.title}</p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I build scalable, high-performance backend systems with Golang, PHP, and AWS. Passionate about search
-              technologies and distributed systems.
+              {t.hero.description}
             </p>
           </div>
 
@@ -20,17 +24,17 @@ export function Hero() {
             <Button asChild className="gap-2">
               <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
                 <FileText className="w-4 h-4" />
-                CV (PDF)
+                {t.hero.cv}
               </a>
             </Button>
             <Button variant="outline" asChild className="gap-2 bg-transparent">
-              <a href="https://linkedin.com/in/caosonduc" target="_blank" rel="noopener noreferrer">
+              <a href="https://linkedin.com/in/cao-son-duc" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-4 h-4" />
                 LinkedIn
               </a>
             </Button>
             <Button variant="outline" asChild className="gap-2 bg-transparent">
-              <a href="https://github.com/caosonduc" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/prcaoduc" target="_blank" rel="noopener noreferrer">
                 <Github className="w-4 h-4" />
                 GitHub
               </a>
@@ -50,7 +54,7 @@ export function Hero() {
       </div>
 
       <div className="mt-16 text-center">
-        <p className="text-lg text-accent font-medium">Golang · PHP · AWS · OpenSearch</p>
+        <p className="text-lg text-accent font-medium">{t.hero.techStack}</p>
       </div>
     </section>
   )
