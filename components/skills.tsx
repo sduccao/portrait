@@ -1,42 +1,47 @@
+'use client'
+
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-
-const skillCategories = [
-  {
-    title: "Backend",
-    skills: ["PHP", "Golang", "PySpark"],
-    color: "bg-accent/10 text-accent border-accent/20",
-  },
-  {
-    title: "Cloud",
-    skills: ["AWS (SAA, SOA, DOA)"],
-    color: "bg-chart-2/10 text-chart-2 border-chart-2/20",
-  },
-  {
-    title: "Database",
-    skills: ["PostgreSQL", "Elasticsearch", "OpenSearch"],
-    color: "bg-chart-3/10 text-chart-3 border-chart-3/20",
-  },
-  {
-    title: "Infrastructure",
-    skills: ["Terraform", "Docker"],
-    color: "bg-chart-4/10 text-chart-4 border-chart-4/20",
-  },
-  {
-    title: "Frontend",
-    skills: ["ReactJS (basic)"],
-    color: "bg-chart-5/10 text-chart-5 border-chart-5/20",
-  },
-]
+import { useLanguage } from "@/contexts/language-context"
 
 export function Skills() {
+  const { t } = useLanguage()
+
+  const skillCategories = [
+    {
+      title: t.skills.categories.languages,
+      skills: t.skills.items.languages,
+      color: "bg-accent/10 text-accent border-accent/20",
+    },
+    {
+      title: t.skills.categories.backend,
+      skills: t.skills.items.backend,
+      color: "bg-chart-2/10 text-chart-2 border-chart-2/20",
+    },
+    {
+      title: t.skills.categories.frontend,
+      skills: t.skills.items.frontend,
+      color: "bg-chart-5/10 text-chart-5 border-chart-5/20",
+    },
+    {
+      title: t.skills.categories.search,
+      skills: t.skills.items.search,
+      color: "bg-chart-3/10 text-chart-3 border-chart-3/20",
+    },
+    {
+      title: t.skills.categories.infrastructure,
+      skills: t.skills.items.infrastructure,
+      color: "bg-chart-4/10 text-chart-4 border-chart-4/20",
+    },
+  ]
+
   return (
     <section className="py-20">
       <div className="space-y-12">
         <div className="text-center space-y-4">
-          <h2 className="text-3xl lg:text-4xl font-bold">Technical Skills</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold">{t.skills.title}</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Specialized in backend development with expertise in cloud infrastructure and search technologies
+            {t.skills.subtitle}
           </p>
         </div>
 

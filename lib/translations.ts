@@ -20,9 +20,9 @@ export const translations = {
     hero: {
       name: 'Son Duc Cao',
       title: 'Back-end Software Engineer',
-      description: 'Back-end Software Engineer with 3.5 years of experience in designing and developing database-centric applications; skilled in web-based architectures, databases, and search systems.',
+      description: 'Back-end Software Engineer with 5+ years of experience in designing and developing database-centric applications; skilled in web-based architectures, databases, and search systems.',
       cv: 'CV (PDF)',
-      techStack: 'PHP · Golang · PySpark · AWS · OpenSearch · BigQuery',
+      techStack: 'PHP · Golang · Python · AWS · OpenSearch · BigQuery',
     },
     skills: {
       title: 'Technical Skills',
@@ -30,12 +30,14 @@ export const translations = {
       categories: {
         languages: 'Programming Languages',
         backend: 'Backend & Databases',
+        frontend: 'Frontend (Basic)',
         search: 'Search & Analytics',
         infrastructure: 'Infrastructure & Tools',
       },
       items: {
-        languages: ['PHP', 'Golang', 'PySpark', 'Python'],
-        backend: ['PostgreSQL', 'MySQL', 'BigQuery', 'RabbitMQ'],
+        languages: ['PHP', 'Golang', 'Python'],
+        backend: ['PostgreSQL', 'MySQL', 'BigQuery'],
+        frontend: ['ReactJS', 'NextJS'],
         search: ['AWS OpenSearch', 'ElasticSearch', 'Google Analytics 4', 'New Relic'],
         infrastructure: ['AWS EC2', 'AWS Lambda', 'AWS Glue', 'AWS EventBridge', 'AWS CodePipeline', 'ECS', 'Amazon S3', 'Terraform', 'Github Actions']
       },
@@ -69,7 +71,7 @@ export const translations = {
     },
     experience: {
       title: 'Work Experience',
-      subtitle: 'Building robust backend systems and search infrastructure',
+      subtitle: 'Building robust backend systems and search infrastructure with 5+ years of experience',
       current: 'Current',
       job1: {
         company: 'PR TIMES Inc.',
@@ -229,11 +231,11 @@ export const translations = {
       contact: 'お問い合わせ',
     },
     hero: {
-      name: 'カオ・ソン・ドゥック',
-      title: 'バックエンドエンジニア',
-      description: 'Golang、PHP、AWSを使用してスケーラブルで高性能なバックエンドシステムを構築しています。検索技術と分散システムに情熱を持っています。',
+      name: 'ソン・ドゥック・カオ',
+      title: 'バックエンドソフトウェアエンジニア',
+      description: 'データベース中心のアプリケーションの設計・開発において5年以上の経験を持つバックエンドソフトウェアエンジニア。Webベースアーキテクチャ、データベース、検索システムに精通。',
       cv: '履歴書 (PDF)',
-      techStack: 'Golang · PHP · AWS · OpenSearch',
+      techStack: 'PHP · Golang · Python · AWS · OpenSearch · BigQuery',
     },
     skills: {
       title: '技術スキル',
@@ -241,8 +243,16 @@ export const translations = {
       categories: {
         languages: 'プログラミング言語',
         backend: 'バックエンド＆データベース',
+        frontend: 'フロントエンド（基本）',
         search: '検索技術',
         infrastructure: 'インフラストラクチャ＆ツール',
+      },
+      items: {
+        languages: ['PHP', 'Golang', 'Python'],
+        backend: ['PostgreSQL', 'MySQL', 'BigQuery'],
+        frontend: ['ReactJS', 'NextJS'],
+        search: ['AWS OpenSearch', 'ElasticSearch', 'Google Analytics 4', 'New Relic'],
+        infrastructure: ['AWS EC2', 'AWS Lambda', 'AWS Glue', 'AWS EventBridge', 'AWS CodePipeline', 'ECS', 'Amazon S3', 'Terraform', 'Github Actions']
       },
     },
     projects: {
@@ -253,14 +263,17 @@ export const translations = {
       project1: {
         title: 'Reddit風SNSプラットフォーム',
         description: 'GolangとPostgreSQLを使用して、リアルタイム機能、ユーザー認証、コンテンツ管理を備えたスケーラブルなソーシャルネットワーキングサービスを構築しました。',
+        technologies: ['Golang', 'PostgreSQL', 'Redis', 'JWT', 'WebSocket'],
       },
       project2: {
         title: 'OpenSearch エンジン最適化',
         description: 'クエリ応答時間を40％高速化し、プレスリリース配信のための関連性スコアリングを向上させる検索パフォーマンスの改善を主導しました。',
+        technologies: ['PHP', 'AWS OpenSearch', 'PostgreSQL', 'AWS EC2', 'BigQuery'],
       },
       project3: {
         title: 'Terraform AWS インフラストラクチャ',
         description: 'Fastly CDN統合と自動スケーリングを備えたマルチ環境デプロイメント用のInfrastructure as Codeを設計・実装しました。',
+        technologies: ['Terraform', 'AWS', 'Fastly CDN', 'Docker', 'Auto Scaling'],
       },
     },
     experience: {
@@ -268,24 +281,61 @@ export const translations = {
       subtitle: '堅牢なバックエンドシステムと検索インフラストラクチャの構築',
       current: '現在',
       job1: {
-        company: 'freee株式会社',
-        role: 'バックエンドエンジニア',
-        description: 'フィンテックアプリケーションのバックエンド開発をリードし、パフォーマンスの最適化とシステムの信頼性に注力しています。',
-        highlights: [
-          '1日10万件以上のトランザクションを処理するマイクロサービスを設計',
-          'キャッシング戦略によりAPIレスポンス時間を40％短縮',
-          '堅牢なエラー処理と監視システムを実装'
-        ],
-      },
-      job2: {
-        company: 'PR TIMES',
-        role: '検索エンジニア',
-        description: 'プレスリリース配信プラットフォームの検索インフラストラクチャと最適化に特化しています。',
-        highlights: [
-          'OpenSearchクエリを最適化し、レイテンシを50％削減',
-          'より良い検索結果のための関連性スコアリングアルゴリズムを設計',
-          '即座のコンテンツ可用性のためのリアルタイムインデックスパイプラインを構築'
-        ],
+        company: 'PR TIMES Inc.',
+        role: 'ソフトウェアエンジニア',
+        period: '2020年10月 〜 現在',
+        location: '東京都',
+        description: 'プレスリリース配信プラットフォームPR TIMESで複数の重要プロジェクトをリード。',
+        projects: [
+          {
+            title: 'PR TIMES検索チームリーダー/メンバー',
+            period: '2022年6月 - 現在',
+            highlights: [
+              'オンプレミスElasticSearchからAWS OpenSearchへのダウンタイムゼロ移行を設計・実行',
+              '検索レイテンシを40%削減、スループットを2倍向上',
+              '日次12時間のインデックス再構築を3時間に短縮',
+              '新しい検索機能の開発とアナリティクス提供'
+            ],
+            technologies: ['PHP', 'AWS EC2', 'RabbitMQ', 'BigQuery', 'AWS OpenSearch', 'PostgreSQL', 'Google Analytics 4', 'New Relic'],
+            blogUrl: 'https://developers.prtimes.jp/2022/12/21/zero-downtime-migration-from-self-managed-elasticsearch-to-aws-opensearch/'
+          },
+          {
+            title: 'PR TIMESランキング・分析システム刷新（単独）',
+            period: '2023年2月 - 2023年12月',
+            highlights: [
+              'CDNアクセスログ集約アプローチによるデータ収集機構の革新',
+              'ランキングボードを6から55に拡張、測定機能を強化',
+              'ランキングシステムのデータ整合性問題を解決',
+              'システム負荷を軽減、アナリティクスアルゴリズムの精度向上'
+            ],
+            technologies: ['Golang', 'PHP', 'AWS Lambda', 'AWS EventBridge', 'PostgreSQL'],
+            blogUrl: 'https://developers.prtimes.jp/2023/12/14/solving-performance-issues-in-pr-timess-press-release-logging/'
+          },
+          {
+            title: 'WebClipping in PR TIMES Beta',
+            period: '2021年11月 - 2022年4月',
+            highlights: [
+              'ウェブ記事自動収集・分析サービスの開発に貢献',
+              '外部委託会社とのインフラタスク管理',
+              'デプロイプロセスとステージング環境の最適化'
+            ],
+            technologies: ['PHP', 'MySQL', 'Github Actions', 'AWS CodePipeline', 'ECS']
+          },
+          {
+            title: 'データウェアハウス・ETLパイプライン構築（単独）',
+            period: '2021年5月 - 2021年10月',
+            highlights: [
+              'モノリシックデータベースからBigQueryへのETL基盤構築',
+              '内部・外部のニーズに対応するBigQueryアナリティクスの活用',
+              'Google Analytics 4統合によるデータパイプライン構築'
+            ],
+            technologies: ['PySpark', 'AWS Glue', 'Amazon S3', 'BigQuery', 'PostgreSQL', 'Google Analytics 4'],
+            blogUrls: [
+              'https://developers.prtimes.jp/2021/08/17/google-analytics_bigquery/',
+              'https://developers.prtimes.jp/2021/11/29/awsglue_etl/'
+            ]
+          }
+        ]
       },
     },
     blog: {
@@ -359,10 +409,10 @@ export const translations = {
     },
     hero: {
       name: 'Cao Sơn Đức',
-      title: 'Kỹ sư Backend',
-      description: 'Tôi xây dựng các hệ thống backend có khả năng mở rộng, hiệu suất cao với Golang, PHP và AWS. Đam mê công nghệ tìm kiếm và hệ thống phân tán.',
+      title: 'Kỹ sư Phần mềm Backend',
+      description: 'Kỹ sư Back-end với hơn 5 năm kinh nghiệm thiết kế và phát triển các ứng dụng tập trung vào cơ sở dữ liệu; thành thạo kiến trúc web, cơ sở dữ liệu và hệ thống tìm kiếm.',
       cv: 'CV (PDF)',
-      techStack: 'Golang · PHP · AWS · OpenSearch',
+      techStack: 'PHP · Golang · Python · AWS · OpenSearch · BigQuery',
     },
     skills: {
       title: 'Kỹ năng kỹ thuật',
@@ -370,8 +420,16 @@ export const translations = {
       categories: {
         languages: 'Ngôn ngữ lập trình',
         backend: 'Backend & Cơ sở dữ liệu',
+        frontend: 'Frontend (Cơ bản)',
         search: 'Công nghệ tìm kiếm',
         infrastructure: 'Hạ tầng & Công cụ',
+      },
+      items: {
+        languages: ['PHP', 'Golang', 'Python'],
+        backend: ['PostgreSQL', 'MySQL', 'BigQuery'],
+        frontend: ['ReactJS', 'NextJS'],
+        search: ['AWS OpenSearch', 'ElasticSearch', 'Google Analytics 4', 'New Relic'],
+        infrastructure: ['AWS EC2', 'AWS Lambda', 'AWS Glue', 'AWS EventBridge', 'AWS CodePipeline', 'ECS', 'Amazon S3', 'Terraform', 'Github Actions']
       },
     },
     projects: {
@@ -382,14 +440,17 @@ export const translations = {
       project1: {
         title: 'Nền tảng SNS giống Reddit',
         description: 'Xây dựng dịch vụ mạng xã hội có khả năng mở rộng với tính năng thời gian thực, xác thực người dùng và quản lý nội dung sử dụng Golang và PostgreSQL.',
+        technologies: ['Golang', 'PostgreSQL', 'Redis', 'JWT', 'WebSocket'],
       },
       project2: {
         title: 'Tối ưu hóa OpenSearch Engine',
         description: 'Dẫn đầu cải thiện hiệu suất tìm kiếm đạt thời gian phản hồi truy vấn nhanh hơn 40% và tăng cường điểm số liên quan cho phân phối thông cáo báo chí.',
+        technologies: ['PHP', 'AWS OpenSearch', 'PostgreSQL', 'AWS EC2', 'BigQuery'],
       },
       project3: {
         title: 'Hạ tầng Terraform AWS',
         description: 'Thiết kế và triển khai Infrastructure as Code cho triển khai đa môi trường với tích hợp Fastly CDN và tự động mở rộng.',
+        technologies: ['Terraform', 'AWS', 'Fastly CDN', 'Docker', 'Auto Scaling'],
       },
     },
     experience: {
@@ -397,24 +458,61 @@ export const translations = {
       subtitle: 'Xây dựng hệ thống backend mạnh mẽ và hạ tầng tìm kiếm',
       current: 'Hiện tại',
       job1: {
-        company: 'Freee K.K.',
-        role: 'Kỹ sư Backend',
-        description: 'Dẫn đầu phát triển backend cho ứng dụng fintech, tập trung vào tối ưu hóa hiệu suất và độ tin cậy của hệ thống.',
-        highlights: [
-          'Kiến trúc microservices xử lý hơn 100K giao dịch hàng ngày',
-          'Giảm thời gian phản hồi API 40% thông qua chiến lược bộ nhớ đệm',
-          'Triển khai hệ thống xử lý lỗi và giám sát mạnh mẽ'
-        ],
-      },
-      job2: {
-        company: 'PR Times',
-        role: 'Kỹ sư Tìm kiếm',
-        description: 'Chuyên về hạ tầng tìm kiếm và tối ưu hóa cho nền tảng phân phối thông cáo báo chí.',
-        highlights: [
-          'Tối ưu hóa truy vấn OpenSearch giảm độ trễ 50%',
-          'Thiết kế thuật toán tính điểm liên quan cho kết quả tìm kiếm tốt hơn',
-          'Xây dựng pipeline lập chỉ mục thời gian thực cho khả năng sẵn sàng nội dung tức thì'
-        ],
+        company: 'PR TIMES Inc.',
+        role: 'Kỹ sư Phần mềm',
+        period: 'Tháng 10/2020 – Hiện tại',
+        location: 'Tokyo, Nhật Bản',
+        description: 'Dẫn đầu nhiều dự án quan trọng tại PR TIMES, nền tảng phân phối thông cáo báo chí lớn.',
+        projects: [
+          {
+            title: 'Trưởng nhóm/Thành viên Nhóm Tìm kiếm PR TIMES',
+            period: 'Tháng 6/2022 - Hiện tại',
+            highlights: [
+              'Thiết kế và thay thế hệ thống ElasticSearch tự quản lý bằng AWS OpenSearch với zero downtime',
+              'Giảm độ trễ tìm kiếm 40% và tăng throughput gấp 2 lần',
+              'Loại bỏ quá trình rebuild index hàng ngày 12 tiếng, giảm xuống 3 tiếng',
+              'Đang phát triển tính năng tìm kiếm mới và cung cấp analytics'
+            ],
+            technologies: ['PHP', 'AWS EC2', 'RabbitMQ', 'BigQuery', 'AWS OpenSearch', 'PostgreSQL', 'Google Analytics 4', 'New Relic'],
+            blogUrl: 'https://developers.prtimes.jp/2022/12/21/zero-downtime-migration-from-self-managed-elasticsearch-to-aws-opensearch/'
+          },
+          {
+            title: 'Thay thế & Nâng cấp Hệ thống Ranking và Phân tích PR TIMES (Dự án cá nhân)',
+            period: 'Tháng 2/2023 - Tháng 12/2023',
+            highlights: [
+              'Cải tiến cơ chế thu thập dữ liệu sử dụng phương pháp tổng hợp CDN access log',
+              'Mở rộng bảng xếp hạng từ 6 lên 55 bảng, nâng cao khả năng đo lường',
+              'Giải quyết vấn đề không nhất quán dữ liệu trong Hệ thống Ranking',
+              'Giảm tải hệ thống và cải thiện độ chính xác thuật toán analytics'
+            ],
+            technologies: ['Golang', 'PHP', 'AWS Lambda', 'AWS EventBridge', 'PostgreSQL'],
+            blogUrl: 'https://developers.prtimes.jp/2023/12/14/solving-performance-issues-in-pr-timess-press-release-logging/'
+          },
+          {
+            title: 'WebClipping trong PR TIMES Beta',
+            period: 'Tháng 11/2021 - Tháng 4/2022',
+            highlights: [
+              'Đóng góp vào phát triển dịch vụ thu thập và phân tích bài viết web tự động',
+              'Quản lý các tác vụ hạ tầng với công ty outsource',
+              'Tối ưu hóa quy trình deploy và hạ tầng staging'
+            ],
+            technologies: ['PHP', 'MySQL', 'Github Actions', 'AWS CodePipeline', 'ECS']
+          },
+          {
+            title: 'Khởi tạo Data Warehouse & Data Pipeline (Dự án cá nhân)',
+            period: 'Tháng 5/2021 - Tháng 10/2021',
+            highlights: [
+              'Xây dựng nền tảng ETL từ cơ sở dữ liệu monolithic sang BigQuery',
+              'Sử dụng khả năng data warehousing của BigQuery cho analytics, hỗ trợ cả nhu cầu nội bộ và bên ngoài',
+              'Xây dựng data pipeline tích hợp Google Analytics 4'
+            ],
+            technologies: ['PySpark', 'AWS Glue', 'Amazon S3', 'BigQuery', 'PostgreSQL', 'Google Analytics 4'],
+            blogUrls: [
+              'https://developers.prtimes.jp/2021/08/17/google-analytics_bigquery/',
+              'https://developers.prtimes.jp/2021/11/29/awsglue_etl/'
+            ]
+          }
+        ]
       },
     },
     blog: {
