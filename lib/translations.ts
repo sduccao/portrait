@@ -409,8 +409,8 @@ export const translations = {
     },
     hero: {
       name: 'Cao Sơn Đức',
-      title: 'Kỹ sư Phần mềm Backend',
-      description: 'Kỹ sư Back-end với hơn 5 năm kinh nghiệm thiết kế và phát triển các ứng dụng tập trung vào cơ sở dữ liệu; thành thạo kiến trúc web, cơ sở dữ liệu và hệ thống tìm kiếm.',
+      title: 'Back-end Software Engineer',
+      description: 'Back-end Software Engineer với hơn 5 năm kinh nghiệm thiết kế và phát triển các ứng dụng tập trung vào cơ sở dữ liệu; thành thạo kiến trúc web, cơ sở dữ liệu và hệ thống tìm kiếm.',
       cv: 'CV (PDF)',
       techStack: 'PHP · Golang · Python · AWS · OpenSearch · BigQuery',
     },
@@ -459,7 +459,7 @@ export const translations = {
       current: 'Hiện tại',
       job1: {
         company: 'PR TIMES Inc.',
-        role: 'Kỹ sư Phần mềm',
+        role: 'Software Engineer',
         period: 'Tháng 10/2020 – Hiện tại',
         location: 'Tokyo, Nhật Bản',
         description: 'Dẫn đầu nhiều dự án quan trọng tại PR TIMES, nền tảng phân phối thông cáo báo chí lớn.',
