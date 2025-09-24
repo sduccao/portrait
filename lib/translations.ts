@@ -81,7 +81,7 @@ export const translations = {
         description: 'Leading multiple critical projects at PR TIMES, a major press release distribution platform.',
         projects: [
           {
-            title: 'PR TIMES Search Team Lead/Member',
+            title: 'PR TIMES Search System',
             period: 'Jun 2022 - Present',
             highlights: [
               'Redesigned and replaced on-premise ElasticSearch to AWS OpenSearch with zero downtime',
@@ -93,7 +93,7 @@ export const translations = {
             blogUrl: 'https://developers.prtimes.jp/2022/12/21/zero-downtime-migration-from-self-managed-elasticsearch-to-aws-opensearch/'
           },
           {
-            title: 'PR TIMES Ranking & Analysis Replacement (Solo)',
+            title: 'PR TIMES Ranking & Analytics Enhancement',
             period: 'Feb 2023 - Dec 2023',
             highlights: [
               'Innovated data collection using CDN access log aggregation approach',
@@ -115,7 +115,7 @@ export const translations = {
             technologies: ['PHP', 'MySQL', 'Github Actions', 'AWS CodePipeline', 'ECS']
           },
           {
-            title: 'Data Warehouse & ETL Pipeline (Solo)',
+            title: 'Data Warehouse & ETL Pipeline',
             period: 'May 2021 - Oct 2021',
             highlights: [
               'Constructed ETL foundation from monolithic databases to BigQuery',
@@ -208,16 +208,8 @@ export const translations = {
       openTo: 'Currently Open To:',
       openToItems: [
         'Backend engineering opportunities',
-        'Technical consulting projects',
         'Open source collaborations'
       ],
-      form: {
-        name: 'Name',
-        email: 'Email',
-        subject: 'Subject',
-        message: 'Message',
-        send: 'Send Message',
-      },
     },
   },
   ja: {
@@ -288,7 +280,7 @@ export const translations = {
         description: 'プレスリリース配信プラットフォームPR TIMESで複数の重要プロジェクトをリード。',
         projects: [
           {
-            title: 'PR TIMES検索チームリーダー/メンバー',
+            title: 'PR TIMES Search System',
             period: '2022年6月 - 現在',
             highlights: [
               'オンプレミスElasticSearchからAWS OpenSearchへのダウンタイムゼロ移行を設計・実行',
@@ -300,7 +292,7 @@ export const translations = {
             blogUrl: 'https://developers.prtimes.jp/2022/12/21/zero-downtime-migration-from-self-managed-elasticsearch-to-aws-opensearch/'
           },
           {
-            title: 'PR TIMESランキング・分析システム刷新（単独）',
+            title: 'PR TIMES Ranking & Analytics Enhancement',
             period: '2023年2月 - 2023年12月',
             highlights: [
               'CDNアクセスログ集約アプローチによるデータ収集機構の革新',
@@ -322,7 +314,7 @@ export const translations = {
             technologies: ['PHP', 'MySQL', 'Github Actions', 'AWS CodePipeline', 'ECS']
           },
           {
-            title: 'データウェアハウス・ETLパイプライン構築（単独）',
+            title: 'Data Warehouse & ETL Pipeline',
             period: '2021年5月 - 2021年10月',
             highlights: [
               'モノリシックデータベースからBigQueryへのETL基盤構築',
@@ -385,16 +377,8 @@ export const translations = {
       openTo: '現在受け付けている内容：',
       openToItems: [
         'バックエンドエンジニアリングの機会',
-        '技術コンサルティングプロジェクト',
         'オープンソースコラボレーション'
       ],
-      form: {
-        name: '名前',
-        email: 'メールアドレス',
-        subject: '件名',
-        message: 'メッセージ',
-        send: 'メッセージを送信',
-      },
     },
   },
   vi: {
@@ -415,7 +399,7 @@ export const translations = {
       techStack: 'PHP · Golang · Python · AWS · OpenSearch · BigQuery',
     },
     skills: {
-      title: 'Kỹ năng kỹ thuật',
+      title: 'Technical Skills',
       subtitle: 'Chuyên môn trải rộng phát triển backend, công nghệ tìm kiếm và hạ tầng đám mây',
       categories: {
         languages: 'Ngôn ngữ lập trình',
@@ -465,7 +449,7 @@ export const translations = {
         description: 'Dẫn đầu nhiều dự án quan trọng tại PR TIMES, nền tảng phân phối thông cáo báo chí lớn.',
         projects: [
           {
-            title: 'Trưởng nhóm/Thành viên Nhóm Tìm kiếm PR TIMES',
+            title: 'PR TIMES Search System',
             period: 'Tháng 6/2022 - Hiện tại',
             highlights: [
               'Thiết kế và thay thế hệ thống ElasticSearch tự quản lý bằng AWS OpenSearch với zero downtime',
@@ -477,7 +461,7 @@ export const translations = {
             blogUrl: 'https://developers.prtimes.jp/2022/12/21/zero-downtime-migration-from-self-managed-elasticsearch-to-aws-opensearch/'
           },
           {
-            title: 'Thay thế & Nâng cấp Hệ thống Ranking và Phân tích PR TIMES (Dự án cá nhân)',
+            title: 'PR TIMES Ranking & Analytics Enhancement',
             period: 'Tháng 2/2023 - Tháng 12/2023',
             highlights: [
               'Cải tiến cơ chế thu thập dữ liệu sử dụng phương pháp tổng hợp CDN access log',
@@ -499,7 +483,7 @@ export const translations = {
             technologies: ['PHP', 'MySQL', 'Github Actions', 'AWS CodePipeline', 'ECS']
           },
           {
-            title: 'Khởi tạo Data Warehouse & Data Pipeline (Dự án cá nhân)',
+            title: 'Data Warehouse & ETL Pipeline',
             period: 'Tháng 5/2021 - Tháng 10/2021',
             highlights: [
               'Xây dựng nền tảng ETL từ cơ sở dữ liệu monolithic sang BigQuery',
@@ -562,16 +546,8 @@ export const translations = {
       openTo: 'Hiện đang sẵn sàng cho:',
       openToItems: [
         'Cơ hội kỹ sư backend',
-        'Dự án tư vấn kỹ thuật',
         'Cộng tác mã nguồn mở'
       ],
-      form: {
-        name: 'Tên',
-        email: 'Email',
-        subject: 'Chủ đề',
-        message: 'Tin nhắn',
-        send: 'Gửi tin nhắn',
-      },
     },
   },
 }
