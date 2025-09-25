@@ -45,8 +45,18 @@ export function Hero() {
         <div className="flex justify-center lg:justify-end">
           <Card className="p-8 bg-card/50 backdrop-blur-sm border-border/50">
             <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center">
-              <div className="w-32 h-32 lg:w-40 lg:h-40 rounded-full bg-accent/30 flex items-center justify-center text-4xl lg:text-5xl font-bold text-accent-foreground">
-                CSD
+              <div className="w-32 h-32 lg:w-40 lg:h-40 rounded-full bg-accent/30 flex items-center justify-center relative">
+                <div className="text-center space-y-1">
+                  <div className="text-4xl lg:text-6xl font-bold text-accent-foreground font-mono">G</div>
+                  <div className="flex justify-center space-x-0.5">
+                    <div className="w-1 h-1 rounded-full bg-accent-foreground/60"></div>
+                    <div className="w-1 h-1 rounded-full bg-accent-foreground/40"></div>
+                    <div className="w-1 h-1 rounded-full bg-accent-foreground/60"></div>
+                  </div>
+                  <div className="text-xs font-mono text-accent-foreground/80 tracking-widest">AAUS</div>
+                </div>
+                <div className="absolute top-2 right-2 w-2 h-2 border border-accent-foreground/30 rotate-45"></div>
+                <div className="absolute bottom-2 left-2 w-1.5 h-1.5 bg-accent-foreground/20 rounded-full"></div>
               </div>
             </div>
           </Card>

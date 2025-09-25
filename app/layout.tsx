@@ -11,9 +11,8 @@ import { ThemeSwitcher } from "@/components/theme-switcher"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Cao Son Duc - Backend Engineer",
-  description: "Backend Engineer specializing in Golang, PHP, AWS, and OpenSearch. 3+ years at PR TIMES Japan.",
-  generator: "v0.app",
+  title: "Gaaus - Backend Engineer & Tech Innovator",
+  description: "Gaaus - Backend Engineer specializing in Golang, PHP, AWS, and OpenSearch. Building robust systems and innovative solutions.",
 }
 
 export default function RootLayout({
