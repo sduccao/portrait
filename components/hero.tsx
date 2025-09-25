@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Github, Linkedin, FileText } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
+import Image from "next/image"
 
 export function Hero() {
   const { t } = useLanguage()
@@ -43,20 +44,23 @@ export function Hero() {
         </div>
 
         <div className="flex justify-center lg:justify-end">
-          <Card className="p-8 bg-card/50 backdrop-blur-sm border-border/50">
-            <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center">
-              <div className="w-32 h-32 lg:w-40 lg:h-40 rounded-full bg-accent/30 flex items-center justify-center relative">
-                <div className="text-center space-y-1">
-                  <div className="text-4xl lg:text-6xl font-bold text-accent-foreground font-mono">G</div>
-                  <div className="flex justify-center space-x-0.5">
-                    <div className="w-1 h-1 rounded-full bg-accent-foreground/60"></div>
-                    <div className="w-1 h-1 rounded-full bg-accent-foreground/40"></div>
-                    <div className="w-1 h-1 rounded-full bg-accent-foreground/60"></div>
-                  </div>
-                  <div className="text-xs font-mono text-accent-foreground/80 tracking-widest">AAUS</div>
+          <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50 hover:shadow-2xl transition-all duration-300">
+            <div className="relative w-56 h-56 lg:w-72 lg:h-72 rounded-2xl overflow-hidden bg-gradient-to-br from-accent/20 to-primary/20">
+              <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent z-10" />
+              <Image
+                src="/profile_picture.jpg"
+                alt="Duc Cao Son - Backend Engineer"
+                fill
+                className="object-cover object-center"
+                priority
+                placeholder="blur"
+                blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Crect width='100' height='100' fill='%23333'/%3E%3Ctext x='50' y='50' text-anchor='middle' dominant-baseline='middle' font-family='monospace' font-size='40' fill='%23666'%3EG%3C/text%3E%3C/svg%3E"
+              />
+              <div className="absolute bottom-0 left-0 right-0 p-4 z-20">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
+                  <span className="text-xs font-mono text-white/80">Available for opportunities</span>
                 </div>
-                <div className="absolute top-2 right-2 w-2 h-2 border border-accent-foreground/30 rotate-45"></div>
-                <div className="absolute bottom-2 left-2 w-1.5 h-1.5 bg-accent-foreground/20 rounded-full"></div>
               </div>
             </div>
           </Card>
