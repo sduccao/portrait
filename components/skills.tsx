@@ -52,7 +52,10 @@ export function Skills() {
             <Card
               key={category.title}
               className={`p-6 space-y-4 skill-card card-hover ${
-                index === 0 ? 'lg:row-span-2' : ''
+                // last index item spans two columns on odd number of items
+                index === skillCategories.length - 1 && skillCategories.length % 2 !== 0
+                  ? 'md:col-span-2'
+                  : ''
               }`}
             >
               <h3 className="text-xl font-semibold flex items-center gap-2">

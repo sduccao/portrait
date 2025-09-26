@@ -22,6 +22,10 @@ export function Projects() {
       ...t.projects.project3,
       stack: t.projects.project3.technologies,
     },
+    {
+      ...t.projects.project4,
+      stack: t.projects.project4.technologies,
+    },
   ]
 
   return (
@@ -52,6 +56,33 @@ export function Projects() {
                   <Badge key={tech} variant="outline">
                     {tech}
                   </Badge>
+                ))}
+              </div>
+
+              <div className="flex flex-wrap gap-3 pt-2">
+                {project.demoUrl && (
+                  <Button asChild variant="default" size="sm" className="gap-2">
+                    <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="w-4 h-4" />
+                      {t.projects.visitLive}
+                    </a>
+                  </Button>
+                )}
+                {project.blogUrl && (
+                  <Button asChild variant="outline" size="sm" className="gap-2">
+                    <a href={project.blogUrl} target="_blank" rel="noopener noreferrer">
+                      <FileText className="w-4 h-4" />
+                      Blog
+                    </a>
+                  </Button>
+                )}
+                {project.blogUrls && project.blogUrls.map((url, idx) => (
+                  <Button key={idx} asChild variant="outline" size="sm" className="gap-2">
+                    <a href={url} target="_blank" rel="noopener noreferrer">
+                      <FileText className="w-4 h-4" />
+                      Blog {idx + 1}
+                    </a>
+                  </Button>
                 ))}
               </div>
 

@@ -40,50 +40,41 @@ export function Blog() {
 
         <div className="grid lg:grid-cols-2 gap-8">
           {blogPosts.map((post, index) => (
-            <Card key={index} className="p-6 space-y-4 hover:shadow-lg transition-shadow">
-              <div className="space-y-3">
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Calendar className="w-4 h-4" />
-                  {post.date}
+            <Card key={index} className="p-0 hover:shadow-lg transition-shadow cursor-pointer group">
+              <a href={post.url} target="_blank" rel="noopener noreferrer" className="block p-6 space-y-4 h-full">
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <Calendar className="w-4 h-4" />
+                    {post.date}
+                  </div>
+
+                  <h3 className="text-lg font-semibold leading-tight group-hover:text-accent transition-colors">{post.title}</h3>
+
+                  <p className="text-muted-foreground text-sm leading-relaxed">{post.excerpt}</p>
+
+                  {post.url && post.url.includes('developers.prtimes.jp') && (
+                    <p className="text-xs text-muted-foreground">
+                      Published on{" "}
+                      <span className="text-accent hover:text-accent/80 transition-colors underline">
+                        PR TIMES Developer Blog
+                      </span>
+                    </p>
+                  )}
                 </div>
 
-                <h3 className="text-lg font-semibold leading-tight">{post.title}</h3>
+                <div className="flex flex-wrap gap-2">
+                  {post.tags.map((tag) => (
+                    <Badge key={tag} variant="outline" className="text-xs">
+                      {tag}
+                    </Badge>
+                  ))}
+                </div>
 
-                <p className="text-muted-foreground text-sm leading-relaxed">{post.excerpt}</p>
-
-                {post.url && post.url.includes('developers.prtimes.jp') && (
-                  <p className="text-xs text-muted-foreground">
-                    Published on{" "}
-                    <a
-                      href="https://developers.prtimes.jp/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-accent hover:text-accent/80 transition-colors underline"
-                    >
-                      PR TIMES Developer Blog
-                    </a>
-                  </p>
-                )}
-              </div>
-
-              <div className="flex flex-wrap gap-2">
-                {post.tags.map((tag) => (
-                  <Badge key={tag} variant="outline" className="text-xs">
-                    {tag}
-                  </Badge>
-                ))}
-              </div>
-
-              <Button
-                variant="ghost"
-                className="w-full justify-between group"
-                asChild
-              >
-                <a href={post.url} target="_blank" rel="noopener noreferrer">
-                  {t.blog.readMore}
+                <div className="flex items-center justify-between text-sm text-muted-foreground pt-2">
+                  <span>{t.blog.readMore}</span>
                   <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </a>
-              </Button>
+                </div>
+              </a>
             </Card>
           ))}
         </div>

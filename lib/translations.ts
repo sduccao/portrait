@@ -47,6 +47,7 @@ export const translations = {
       subtitle: 'Highlighting key projects that demonstrate my backend engineering expertise',
       viewCode: 'Code',
       viewDemo: 'Demo',
+      visitLive: 'Visit Site',
       project1: {
         title: 'PR TIMES Search System Migration',
         description: 'Redesigned and migrated on-premise ElasticSearch to AWS OpenSearch with zero downtime. Reduced search latency by 40% and increased throughput by 2x while eliminating 12-hour daily index rebuild.',
@@ -60,13 +61,19 @@ export const translations = {
         blogUrl: 'https://developers.prtimes.jp/2023/12/14/solving-performance-issues-in-pr-timess-press-release-logging/'
       },
       project3: {
-        title: 'Data Warehouse & ETL Pipeline',
+        title: 'PR TIMES Analytics Foundation',
         description: 'Constructed ETL foundation from PR TIMES monolithic databases and Google Analytics 4 to BigQuery, enabling advanced analytics capabilities for internal and external use.',
         technologies: ['PySpark', 'AWS Glue', 'Amazon S3', 'BigQuery', 'PostgreSQL', 'Google Analytics 4'],
         blogUrls: [
           'https://developers.prtimes.jp/2021/08/17/google-analytics_bigquery/',
           'https://developers.prtimes.jp/2021/11/29/awsglue_etl/'
         ]
+      },
+      project4: {
+        title: 'Flezz',
+        description: 'Full-stack web application built with modern technologies, featuring robust backend architecture and responsive frontend design.',
+        technologies: ['Go', 'PostgreSQL', 'AWS', 'Next.js'],
+        demoUrl: 'https://flezz.net'
       },
     },
     experience: {
@@ -252,6 +259,7 @@ export const translations = {
       subtitle: 'バックエンドエンジニアリングの専門知識を示す主要プロジェクト',
       viewCode: 'コード',
       viewDemo: 'デモ',
+      visitLive: 'サイトを見る',
       project1: {
         title: 'Reddit風SNSプラットフォーム',
         description: 'GolangとPostgreSQLを使用して、リアルタイム機能、ユーザー認証、コンテンツ管理を備えたスケーラブルなソーシャルネットワーキングサービスを構築しました。',
@@ -263,9 +271,15 @@ export const translations = {
         technologies: ['PHP', 'AWS OpenSearch', 'PostgreSQL', 'AWS EC2', 'BigQuery'],
       },
       project3: {
-        title: 'Terraform AWS インフラストラクチャ',
-        description: 'Fastly CDN統合と自動スケーリングを備えたマルチ環境デプロイメント用のInfrastructure as Codeを設計・実装しました。',
-        technologies: ['Terraform', 'AWS', 'Fastly CDN', 'Docker', 'Auto Scaling'],
+        title: 'PR TIMESアナリティクス基盤',
+        description: 'PR TIMESのモノリシックデータベースとGoogle Analytics 4からBigQueryへのETL基盤を構築し、内部・外部向けの高度なアナリティクス機能を実現しました。',
+        technologies: ['PySpark', 'AWS Glue', 'Amazon S3', 'BigQuery', 'PostgreSQL', 'Google Analytics 4'],
+      },
+      project4: {
+        title: 'Flezz',
+        description: '現代的な技術を使用して構築されたフルスタックWebアプリケーション。堅牢なバックエンドアーキテクチャとレスポンシブフロントエンドデザインを特徴とします。',
+        technologies: ['Go', 'PostgreSQL', 'AWS', 'Next.js'],
+        demoUrl: 'https://flezz.net'
       },
     },
     experience: {
@@ -421,6 +435,7 @@ export const translations = {
       subtitle: 'Các dự án chính thể hiện chuyên môn kỹ thuật backend của tôi',
       viewCode: 'Mã nguồn',
       viewDemo: 'Demo',
+      visitLive: 'Truy cập',
       project1: {
         title: 'Nền tảng SNS giống Reddit',
         description: 'Xây dựng dịch vụ mạng xã hội có khả năng mở rộng với tính năng thời gian thực, xác thực người dùng và quản lý nội dung sử dụng Golang và PostgreSQL.',
@@ -432,9 +447,15 @@ export const translations = {
         technologies: ['PHP', 'AWS OpenSearch', 'PostgreSQL', 'AWS EC2', 'BigQuery'],
       },
       project3: {
-        title: 'Hạ tầng Terraform AWS',
-        description: 'Thiết kế và triển khai Infrastructure as Code cho triển khai đa môi trường với tích hợp Fastly CDN và tự động mở rộng.',
-        technologies: ['Terraform', 'AWS', 'Fastly CDN', 'Docker', 'Auto Scaling'],
+        title: 'Nền tảng Analytics PR TIMES',
+        description: 'Xây dựng nền tảng ETL từ các cơ sở dữ liệu monolithic của PR TIMES và Google Analytics 4 đến BigQuery, cho phép khả năng phân tích nâng cao cho sử dụng nội bộ và bên ngoài.',
+        technologies: ['PySpark', 'AWS Glue', 'Amazon S3', 'BigQuery', 'PostgreSQL', 'Google Analytics 4'],
+      },
+      project4: {
+        title: 'Flezz',
+        description: 'Ứng dụng web full-stack được xây dựng bằng các công nghệ hiện đại, có kiến trúc backend mạnh mẽ và thiết kế frontend responsive.',
+        technologies: ['Go', 'PostgreSQL', 'AWS', 'Next.js'],
+        demoUrl: 'https://flezz.net'
       },
     },
     experience: {
