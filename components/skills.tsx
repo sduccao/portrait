@@ -36,19 +36,29 @@ export function Skills() {
   ]
 
   return (
-    <section className="py-20">
+    <section className="py-24 section-alt section-divider">
       <div className="space-y-12">
         <div className="text-center space-y-4">
-          <h2 className="text-3xl lg:text-4xl font-bold">{t.skills.title}</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
+            {t.skills.title}
+          </h2>
+          <p className="text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto">
             {t.skills.subtitle}
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {skillCategories.map((category) => (
-            <Card key={category.title} className="p-6 space-y-4">
-              <h3 className="text-xl font-semibold">{category.title}</h3>
+          {skillCategories.map((category, index) => (
+            <Card
+              key={category.title}
+              className={`p-6 space-y-4 skill-card card-hover ${
+                index === 0 ? 'lg:row-span-2' : ''
+              }`}
+            >
+              <h3 className="text-xl font-semibold flex items-center gap-2">
+                <div className={`w-1 h-6 rounded-full ${category.color.split(' ')[0]}`} />
+                {category.title}
+              </h3>
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill) => (
                   <Badge key={skill} variant="secondary" className={category.color}>

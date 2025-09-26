@@ -19,7 +19,7 @@ export const translations = {
     },
     hero: {
       name: 'Son Duc Cao',
-      title: 'Back-end Software Engineer',
+      title: 'Software Engineer',
       description: 'Back-end Software Engineer with 5+ years of experience in designing and developing database-centric applications; skilled in web-based architectures, databases, and search systems.',
       cv: 'CV (PDF)',
       techStack: 'PHP · Golang · Python · AWS · OpenSearch · BigQuery',
@@ -224,7 +224,7 @@ export const translations = {
     },
     hero: {
       name: 'ソン・ドゥック・カオ',
-      title: 'バックエンドソフトウェアエンジニア',
+      title: 'ソフトウェアエンジニア',
       description: 'データベース中心のアプリケーションの設計・開発において5年以上の経験を持つバックエンドソフトウェアエンジニア。Webベースアーキテクチャ、データベース、検索システムに精通。',
       cv: '履歴書 (PDF)',
       techStack: 'PHP · Golang · Python · AWS · OpenSearch · BigQuery',
@@ -393,7 +393,7 @@ export const translations = {
     },
     hero: {
       name: 'Cao Sơn Đức',
-      title: 'Back-end Software Engineer',
+      title: 'Software Engineer',
       description: 'Back-end Software Engineer với hơn 5 năm kinh nghiệm thiết kế và phát triển các ứng dụng tập trung vào cơ sở dữ liệu; thành thạo kiến trúc web, cơ sở dữ liệu và hệ thống tìm kiếm.',
       cv: 'CV (PDF)',
       techStack: 'PHP · Golang · Python · AWS · OpenSearch · BigQuery',

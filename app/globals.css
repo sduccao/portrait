@@ -124,4 +124,91 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Section backgrounds for better visual separation */
+  .section-alt {
+    @apply relative;
+    background: linear-gradient(
+      to bottom,
+      oklch(from var(--muted) l c h / 0.03),
+      oklch(from var(--muted) l c h / 0.05)
+    );
+  }
+
+  /* Visual separator lines */
+  .section-divider {
+    @apply relative;
+  }
+
+  .section-divider::after {
+    content: '';
+    @apply absolute bottom-0 left-1/2 -translate-x-1/2 w-24 h-px;
+    background: linear-gradient(
+      to right,
+      transparent,
+      oklch(from var(--border) l c h / 0.5),
+      transparent
+    );
+  }
+
+  /* Hero gradient background */
+  .hero-gradient {
+    background: radial-gradient(
+      ellipse 80% 50% at 50% -20%,
+      oklch(from var(--accent) l c h / 0.15),
+      transparent
+    );
+  }
+
+  /* Enhanced card hover effects */
+  .card-hover {
+    @apply transition-all duration-300 hover:scale-[1.02];
+    box-shadow:
+      0 0 0 1px oklch(from var(--border) l c h / 0.1),
+      0 2px 4px oklch(from var(--foreground) l c h / 0.05);
+  }
+
+  .card-hover:hover {
+    box-shadow:
+      0 0 0 1px oklch(from var(--accent) l c h / 0.2),
+      0 8px 16px oklch(from var(--foreground) l c h / 0.1),
+      0 0 24px oklch(from var(--accent) l c h / 0.05);
+  }
+
+  /* Project card special styling */
+  .project-card {
+    @apply relative overflow-hidden;
+    background: linear-gradient(
+      135deg,
+      oklch(from var(--card) l c h),
+      oklch(from var(--card) l c h / 0.98)
+    );
+  }
+
+  .project-card::before {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-1;
+    background: linear-gradient(
+      90deg,
+      oklch(from var(--accent) l c h / 0.5),
+      oklch(from var(--primary) l c h / 0.3)
+    );
+  }
+
+  /* Skills card styling */
+  .skill-card {
+    @apply relative;
+    background: linear-gradient(
+      to bottom right,
+      oklch(from var(--card) l c h),
+      oklch(from var(--muted) l c h / 0.3)
+    );
+  }
 }

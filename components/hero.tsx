@@ -10,8 +10,14 @@ export function Hero() {
   const { t } = useLanguage()
 
   return (
-    <section className="py-20 lg:py-32">
-      <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+    <section className="relative py-24 lg:py-36 hero-gradient overflow-hidden">
+      {/* Animated background elements */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-0 -left-4 w-72 h-72 bg-accent/10 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute top-0 -right-4 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse animation-delay-2000" />
+      </div>
+
+      <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center relative z-10">
         <div className="space-y-8">
           <div className="space-y-4">
             <h1 className="text-4xl lg:text-6xl font-bold text-balance">{t.hero.name}</h1>
@@ -49,19 +55,13 @@ export function Hero() {
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent z-10" />
               <Image
                 src="/profile_picture.jpg"
-                alt="Duc Cao Son - Backend Engineer"
+                alt="Duc Cao Son - Software Engineer"
                 fill
                 className="object-cover object-center"
                 priority
                 placeholder="blur"
                 blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Crect width='100' height='100' fill='%23333'/%3E%3Ctext x='50' y='50' text-anchor='middle' dominant-baseline='middle' font-family='monospace' font-size='40' fill='%23666'%3EG%3C/text%3E%3C/svg%3E"
               />
-              <div className="absolute bottom-0 left-0 right-0 p-4 z-20">
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-                  <span className="text-xs font-mono text-white/80">Available for opportunities</span>
-                </div>
-              </div>
             </div>
           </Card>
         </div>

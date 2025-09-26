@@ -25,18 +25,23 @@ export function Projects() {
   ]
 
   return (
-    <section className="py-20">
+    <section className="py-24 section-divider">
       <div className="space-y-12">
         <div className="text-center space-y-4">
-          <h2 className="text-3xl lg:text-4xl font-bold">{t.projects.title}</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-4xl lg:text-5xl font-bold">{t.projects.title}</h2>
+          <p className="text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto">
             {t.projects.subtitle}
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="p-6 space-y-6 hover:shadow-lg transition-shadow">
+            <Card
+              key={index}
+              className={`p-6 space-y-6 project-card card-hover ${
+                index === 0 ? 'xl:col-span-2 xl:row-span-1' : ''
+              }`}
+            >
               <div className="space-y-3">
                 <h3 className="text-xl font-semibold">{project.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">{project.description}</p>
