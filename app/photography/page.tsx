@@ -1,9 +1,10 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { ArrowLeft, Camera, MapPin, Calendar } from "lucide-react"
+import { ArrowLeft, Camera, MapPin, Calendar, Lock } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -82,8 +83,91 @@ const samplePhotos: Photo[] = [
 ]
 
 const categories = ["All", "Urban", "Nature", "Street", "Architecture", "Lifestyle"]
+const CORRECT_PASSWORD = 'preview2024'
 
 export default function PhotographyPage() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false)
+  const [password, setPassword] = useState('')
+  const [error, setError] = useState(false)
+
+  useEffect(() => {
+    // Check if already authenticated in this session
+    const auth = sessionStorage.getItem('photo-auth')
+    if (auth === 'true') {
+      setIsAuthenticated(true)
+    }
+  }, [])
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    if (password === CORRECT_PASSWORD) {
+      sessionStorage.setItem('photo-auth', 'true')
+      setIsAuthenticated(true)
+    } else {
+      setError(true)
+      setPassword('')
+      setTimeout(() => setError(false), 3000)
+    }
+  }
+
+  if (!isAuthenticated) {
+    return (
+      <main className="min-h-screen bg-background flex items-center justify-center p-4">
+        <div className="w-full max-w-md">
+          <div className="flex justify-start mb-8">
+            <Button asChild variant="ghost" size="sm" className="gap-2">
+              <Link href="/">
+                <ArrowLeft className="w-4 h-4" />
+                Back to Home
+              </Link>
+            </Button>
+          </div>
+
+          <Card className="p-8">
+            <div className="text-center mb-6">
+              <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Lock className="w-8 h-8 text-accent" />
+              </div>
+              <h2 className="text-2xl font-bold mb-2">Photography Gallery</h2>
+              <p className="text-muted-foreground">Coming Soon</p>
+            </div>
+
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div>
+                <label htmlFor="password" className="block text-sm font-medium mb-2 text-muted-foreground">
+                  Enter access code to preview
+                </label>
+                <input
+                  type="password"
+                  id="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  placeholder="••••••••"
+                  required
+                  className="w-full px-4 py-2 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent transition-colors"
+                />
+                {error && (
+                  <p className="mt-2 text-sm text-destructive">
+                    Incorrect access code. Please try again.
+                  </p>
+                )}
+              </div>
+
+              <Button type="submit" className="w-full">
+                Access Gallery
+              </Button>
+            </form>
+
+            <p className="mt-6 text-center text-sm text-muted-foreground">
+              This gallery is currently under development.<br />
+              Please check back soon or contact for access.
+            </p>
+          </Card>
+        </div>
+      </main>
+    )
+  }
+
   return (
     <main className="min-h-screen bg-background">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -91,9 +175,9 @@ export default function PhotographyPage() {
           <div className="space-y-8">
             <div className="flex items-center gap-4">
               <Button asChild variant="ghost" size="sm" className="gap-2">
-                <Link href="/hobby">
+                <Link href="/">
                   <ArrowLeft className="w-4 h-4" />
-                  Back to Hobby Home
+                  Back to Home
                 </Link>
               </Button>
             </div>
